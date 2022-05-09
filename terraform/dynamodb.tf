@@ -1,6 +1,6 @@
 resource "aws_dynamodb_table" "this1" {
   count = var.dynamodb_this1_enabled ? 1 : 0
-  name = "this1"
+  name = module.my_best_table_label.id #"this1"
   hash_key = "TestTableHashKey"
   billing_mode = "PAY_PER_REQUEST"
 

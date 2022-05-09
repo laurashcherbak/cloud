@@ -83,17 +83,17 @@ module "my_best_table_label" {
 
 
 
-resource "aws_dynamodb_table" "this" {
-  name             = module.my_best_table_label.id #module.base_labels.id #var.user_table #var./local.
-  hash_key         = "TestTableHashKey"
-  billing_mode     = "PAY_PER_REQUEST"
-
-  attribute {
-    name = "TestTableHashKey"
-    type = "S"
-  }
-
-}
+#resource "aws_dynamodb_table" "this0" {
+#  name             = module.my_best_table_label.id #module.base_labels.id #var.user_table #var./local.
+#  hash_key         = "TestTableHashKey"
+#  billing_mode     = "PAY_PER_REQUEST"
+#
+#  attribute {
+#    name = "TestTableHashKey"
+#    type = "S"
+#  }
+#
+#}
 
 #output "user_table_id" {
 #  value = aws_dynamodb_table.this.id
